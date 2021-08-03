@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Number of Elements</title>
+  </head>
+  <body>
+    <form action="" id="myForm">
+      <table>
+        <tr>
+          <td><p>Name :</p></td>
+            <td><input type="text" name="" id=""></td>
+        </tr>
+        <tr>
+          <td><p>Password :</p></td>
+            <td><input type="password" name="" id=""></td>
+        </tr>
+        <tr>
+          <td><p>Email : </p></td>
+            <td><input type="email" name="" id=""></td>
+        </tr>
+        <tr>
+          <td>Sex : </td>
+          <td>
+            <input type="radio" name="radMale" id="" value="Male">Male</image>
+            <input type="radio" name="radFemale" id="" value="Female">Female</image>
+          </td>
+        </tr>
+        <tr>
+          <td><p> Newsletter :</p></td>
+          <td><input type="checkbox" name="" id=""></td>
+        </tr>
+      </table>
+      <input type="button" value="Click Here" onclick="doThis()">
+      <p>This form contains <span id="thisText"></span> number of elements.</p>
+    </form>
+  </body>
+</html>
+<script>
+  function doThis(){
+    document.getElementById("thisText").innerHTML = document.getElementById("myForm").length;
+  }
+</script>
