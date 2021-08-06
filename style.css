@@ -1,0 +1,12 @@
+body{
+    background-color: grey;
+}
+h1{
+    background-color: yellow;
+}
+h2{
+    background-color: red;
+}
+p{
+    text-decoration: underline;
+}
