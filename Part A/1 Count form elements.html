@@ -32,12 +32,13 @@
         </tr>
       </table>
       <input type="button" value="Click Here" onclick="doThis()">
-      <p>This form contains <span id="thisText"></span> number of elements.</p>
+      <!-- <p>This form contains <span id="thisText"></span> number of elements.</p> -->
     </form>
   </body>
 </html>
 <script>
   function doThis(){
-    document.getElementById("thisText").innerHTML = document.getElementById("myForm").length;
+    // document.getElementById("thisText").innerHTML = document.getElementById("myForm").length;
+    alert("Elements in form is " + document.getElementById("myForm").length );
   }
 </script>
